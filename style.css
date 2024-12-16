@@ -1,0 +1,403 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --textcolor:#6e6e6e;
+    --background:#1d0b38f5;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #9f6dfbee;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #868e96;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #868e96;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+:focus,:hover,:active{
+    outline: 0 !important;
+    outline-offset: 0;
+}
+/* header */
+.navbar{
+    background-color: var( --background);
+    height: 6rem;
+    position:sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-link{
+    font-size: 1rem;
+    font-family: var(--font-family-sans-serif);
+    font-weight: 600;
+    color: #ffff;
+    margin-right: 4rem;
+    transition: 0.4s;
+}
+.nav-link:hover{
+    color: var(--danger);
+}
+.navbar-brand span{
+    color: var(--red);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-toggler-icon{
+    border: none !important;
+    outline: 0 !important;
+}
+.navbar-toggler{
+   display: none;
+   border: 0px !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.nav-links{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--white);
+    margin-top: 2rem;
+    text-decoration: none;
+}
+.offcanvas{
+    background-color: var(--background);
+}
+
+
+/* bannar css */
+.bannartext h1{
+    color: white;
+}
+.carousel-caption{
+    bottom: 7rem;
+}
+.carousel-caption h1{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.30rem;
+}
+.carousel-caption h5{
+    font-size: 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: white;
+}
+.carousel-caption p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+.carousel-item{
+    background-image: url(images/slider_background.jpg.webp);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 90vh;
+}
+
+
+
+/* about */
+.abouthead h1{
+    color:#28262d;
+}
+.abouthead button{
+    height: 3rem;
+    width: 9rem;
+    border: 2px solid #452b78;
+    font-size: 0.80rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #452b78;
+    background-color:white;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0.60rem;
+}
+.abouthead button:hover{
+    background-color: #452b78;
+    color: white;
+   
+}
+.cardtext1 h2{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #28262d;
+}
+.cardtext1 p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #868e96;
+}
+
+/* services */
+.servicestext h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #28262d;
+    margin-top: 2rem;
+}
+.servicestext p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #868e96;
+    margin-top: 2rem;
+}
+.servicestext{
+    position:relative;
+    top: 3rem;
+}
+.smallcard{
+    margin-top: 10rem;
+}
+
+/* slider css */
+.card-body{
+   height: 25rem;
+   width: 20rem;
+   /* border: 1px solid black; */
+   margin:3rem auto;
+}
+.card{
+    margin-top: 1rem;
+    box-shadow: 0px 0px 1px #868e96;
+}
+.card-body i{
+    font-size: 3rem;
+    color: var(--purple);
+}
+.card-body h5{
+    font-size: 2.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:#28262d;
+    margin-top: 3rem;
+}
+.card-body p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #868e96;
+    margin-top: 2rem;
+}
+.card-body button{
+    height: 3rem;
+    width: 9rem;
+    border: 2px solid var(--background);
+    font-size: 0.80rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: var(--background);
+    background-color: white;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 0.6s;
+    border-radius: 0.60rem;
+}
+.card-body button:hover{
+    background-color: var(--background);
+    color: white;
+}
+.card:hover{
+    background-color: #452b78;
+    transition: 0.6s;
+    transform: scale(1.0.10);
+}
+
+/* feature */
+.feauture{
+    background-color: whitesmoke;
+    margin-top: 3rem;
+}
+.feautretext h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #28262d;
+}
+.feautretext p{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: #868e96;
+}
+.modren{
+    padding-top: 4rem;
+}
+.feautretext{
+    margin-top: 2rem;
+}
+.Btn ,.maintext button,.form button{
+    height: 3rem;
+    width: 10rem;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 0.60rem;
+}
+.form button{
+   background-color: transparent;
+   border: 2px solid #452b78;
+   color: white;
+}
+.form button:hover{
+    background-color: #452b78;
+}
+.Btn ,.maintext button:hover{
+    background-color: var(--background);
+    color: white;
+}
+.featurebtun ,.formbutton{
+    height: 14rem;
+    width: 13rem;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    margin:3rem auto;
+}
+
+/* customer */
+.customer{
+    background-image:url(images/cta_background.jpg.webp);
+    background-size: 100% 100%;
+}
+.customertext ,.maintext{
+    margin-top: 5.3rem;
+}
+.customertext h1 ,.maintext h1,.conatactus{
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.customertext p ,.maintext p,.conatactus{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 1rem;
+    line-height: 1.6rem;
+}
+.maintext h1{
+    color: #28262d;
+}
+.maintext p{
+    color: #868e96;
+}
+
+
+/* conatct us */
+.conatact{
+    background-color: var(--background);
+}
+
+
+/* form */
+.mb-3 input{
+    height: 3rem;
+    width: 30rem;
+    font-size: 0.80rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--purple);
+    padding-left: 1rem;
+    border-radius: 0.60rem;
+}
+.mb-3{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.mb-3 input:focus{
+    border: none !important;
+}
+.conatactus{
+    padding-top: 5rem;
+}
+
+/* footer */
+.logo h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #28262d;
+}
+.logo span{
+    color: var(--danger);
+}
+.logo p ,i{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #868e96;
+    margin-top: 1rem;
+    line-height: 1.7rem;
+    margin-top: 2rem;
+}
+.logo i{
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+.footer h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #28262d;
+}
+.footer a{
+    font-size: 1rem;
+    color: #868e96;
+    margin-top: 2rem;
+    font-weight: 600;
+    line-height: 1.9rem;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: black;
+}
+/* navbar responsive */
+@media(max-width:992px){
+    .navbar-toggler{
+        display: block;
+        padding-bottom: 2.5rem;
+    }
+
+    .nav-link{
+        display: none;
+    }
+}
+
+/* services responsive */
+@media(max-width:768px){
+    .servicestext{
+        text-align: center;
+    }
+    .smallcard{
+        width: 100%;
+        margin:10rem auto;
+    }
+   
+}
